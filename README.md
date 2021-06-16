@@ -1,6 +1,6 @@
 # [ JS ] 用 Canvas 練習物件導向
 ## demo
-demo
+[demo](https://su-ya.github.io/JavaScript-OOP-bouncing-balls-practice/)
 
 ## 目的
 - 如何用 canvas 繪製物件

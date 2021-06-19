@@ -97,9 +97,9 @@ class Ball {
   }
 }
 
-function initBalls() {
-  // 球的總數量
-  const TOTAL_BALLS = 25;
+function createBalls(TOTAL_BALLS) {
+  // // 球的總數量
+  // const TOTAL_BALLS = 25;
 
   return Array(TOTAL_BALLS).fill(null).map(() => {
     // 圓半徑，從 10 ~ 20 隨機產生
@@ -132,7 +132,6 @@ function loop() {
   // 設置畫布
   setupCanvas()
 
-  const TOTAL_BALLS = balls.length;
   for(let idx = 0; idx < TOTAL_BALLS; idx++) {
     const currentBall = balls[idx];
     
@@ -156,5 +155,7 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
-const balls = initBalls();
+// 球的總數量
+const TOTAL_BALLS = 3;
+const balls = createBalls(TOTAL_BALLS);
 loop();

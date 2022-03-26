@@ -98,9 +98,6 @@ class Ball {
 }
 
 function createBalls(TOTAL_BALLS) {
-  // // 球的總數量
-  // const TOTAL_BALLS = 25;
-
   return Array(TOTAL_BALLS).fill(null).map(() => {
     // 圓半徑，從 10 ~ 20 隨機產生
     const radius = random(10,20);
@@ -156,6 +153,6 @@ function loop() {
 }
 
 // 球的總數量
-const TOTAL_BALLS = 3;
+const TOTAL_BALLS = 25;
 const balls = createBalls(TOTAL_BALLS);
 loop();
